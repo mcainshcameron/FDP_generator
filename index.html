@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FDP Generator</title>
+</head>
+<body>
+
+<h2>FDP Generator</h2>
+<button onclick="generateRandomWord()">FDP Generator</button>
+<p id="displayWord"></p>
+
+<script>
+    const words = [
+        "Agile", "Allround dinamise", "Assessment", "Assignment", "Awareness",
+        "Baseline", "Bootcamp", "Borderline", "Boutique", "Brainstorming",
+        "Briefing", "Broadcast", "Calendar", "Call-out", "Case", "Charne",
+        "Culture", "Culture de valeur", "CXO", "Deck", "Demand", "Denim",
+        "Dependability", "Diet", "Diver", "Driver", "Effort", "Elasticity",
+        "Electricity", "Enfacement", "Enforcement", "Engagement", "Escalation",
+        "Experience", "Expertise", "Exploit", "Feedback", "Fill royse",
+        "Follow up", "Footprint", "Indose", "Job rotation", "Kick-off",
+        "Mindset", "Misleading", "Mission", "Onboarding", "Operability",
+        "Opportunità", "Pattern", "Pillars", "Placeholder", "Playroom",
+        "Pleuive", "Pochette", "Portfolio", "Practice", "Progetto sfidante",
+        "Programmability", "PT paini", "Reference", "Retreat", "Risove",
+        "Schedulare", "Schedule", "Set-up", "SF-iate", "Siteco", "Soft skills",
+        "Specifics", "Sponsor", "Spot", "Sprint review", "State", "Steeco",
+        "Strict", "Target", "Triggerare", "Unraveling", "Use case", "Vision",
+        "Waterfall", "Workaround", "Workflow"
+    ];
+
+    function generateRandomWord() {
+        const randomWord = words[Math.floor(Math.random() * words.length)];
+        document.getElementById('displayWord').textContent = randomWord;
+    }
+</script>
+
+</body>
+</html>
